@@ -9,9 +9,10 @@ struct storeInstructionData {
     u8 discriminant;
     u32 numberOfItems;
     // padding[3];
-    CancelOrderParams test[4];
+    CancelOrderParams test[numberOfItems];
 };
 
 
 storeInstructionData struct_at_0x00 @ 0x00;
+
 
