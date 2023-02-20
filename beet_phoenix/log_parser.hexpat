@@ -89,10 +89,11 @@ struct logInstructionData {
     u8 discriminant;
     // padding[3];
     headerData logHeader;
-    eventData data[3];
+    eventData data[logHeader.totalEvents];
 };
 
 
 logInstructionData struct_at_0x00 @ 0x00;
+
 
 
